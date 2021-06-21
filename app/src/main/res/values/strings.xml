@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RBook</string>
+    <string name="Search">Search</string>
+    <string name="Library">Library</string>
+    <string name="Account">Account</string>
+    <string name="Category">Category</string>
 </resources>

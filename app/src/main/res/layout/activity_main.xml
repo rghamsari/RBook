@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/coordeinator"
+        app:layout_constraintTop_toTopOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--<fragment
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             /> -->
+
+     </androidx.core.widget.NestedScrollView>
+     <androidx.coordinatorlayout.widget.CoordinatorLayout
+         android:id="@+id/coordeinator"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/nestedscrollview">
+         <com.google.android.material.bottomappbar.BottomAppBar
+             android:id="@+id/bottomAppBar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+             app:menu="@menu/menu"
+
+
+
+             />
+
+         <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:srcCompat="@drawable/ic_add_24dp"
+             app:layout_anchor="@id/bottomAppBar"
+             />
+     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>

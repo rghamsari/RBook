@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:contentDescription="@string/Search"
+    android:id="@+id/search"
+    app:showAsAction="ifRoom"
+    android:icon="@drawable/ic_action_search"
+    />
+<item
+    android:contentDescription="@string/Library"
+    android:id="@+id/library"
+    app:showAsAction="ifRoom"/>
+    <item
+        android:contentDescription="@string/Account"
+        android:id="@+id/account"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:contentDescription="@string/Category"
+        android:id="@+id/category"
+        app:showAsAction="ifRoom"/>
+    </menu>
