@@ -3,19 +3,26 @@
 <item
     android:contentDescription="@string/Search"
     android:id="@+id/search"
+    android:title="search"
     app:showAsAction="ifRoom"
     android:icon="@drawable/ic_action_search"
     />
 <item
     android:contentDescription="@string/Library"
     android:id="@+id/library"
+    android:title="@string/Library"
+    android:icon="@drawable/ic_action_library"
     app:showAsAction="ifRoom"/>
     <item
         android:contentDescription="@string/Account"
         android:id="@+id/account"
-        app:showAsAction="ifRoom"/>
+        android:title="@string/Account"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_account"/>
     <item
         android:contentDescription="@string/Category"
         android:id="@+id/category"
-        app:showAsAction="ifRoom"/>
+        android:title="@string/Category"
+        android:icon="@drawable/ic_action_category"
+        app:showAsAction="never"/>
     </menu>

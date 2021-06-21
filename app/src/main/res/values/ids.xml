@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="category" type="id">menucategory</item>
+    <item name="account" type="id">menu_account</item>
+    <item name="library" type="id">menu_library</item>
+    <item name="search" type="id">menu_search</item>
+</resources>
